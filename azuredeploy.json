@@ -33,7 +33,7 @@
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": " ",
+      "defaultValue": "https://github.com/VMoose/AzureTrialProject",
       "metadata": {
         "description": "Optional Git Repo URL"
       }
