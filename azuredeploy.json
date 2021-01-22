@@ -4,7 +4,7 @@
   "parameters": {
     "webAppName": {
       "type": "string",
-      "defaultValue": "['AzureARM']",
+      "defaultValue": "[concat('webApp-', uniqueString(resourceGroup().id))]",
       "minLength": 2,
       "metadata": {
         "description": "Web app name."
@@ -26,14 +26,14 @@
     },
     "linuxFxVersion": {
       "type": "string",
-      "defaultValue": "Python|3.6",
+      "defaultValue": "DOTNETCORE|3.0",
       "metadata": {
         "description": "The Runtime stack of current web app"
       }
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": "https://github.com/VMoose/AzureTrialProject",
+      "defaultValue": " ",
       "metadata": {
         "description": "Optional Git Repo URL"
       }
